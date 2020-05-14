@@ -1,0 +1,56 @@
+
+//header
+#gnb{position: absolute;width: 100%;padding: 11px 16px 0;flex-flow: wrap;display: flex;justify-content: space-between;box-sizing: border-box;z-index: $z-header;
+	#header{width: 1024px;}
+	.hl-group{
+		&__area{}
+		&__box{
+			.demo{position: absolute;top: 14px;left: 32px;}
+		}
+		&__items{}
+		//&__tit{position: absolute;top: 31px;left: 110px;padding: 0 30px;background-color: #fb6d85;border-radius: 18px;}
+		&__tit{position: absolute;top: 19px;left: 110px;}
+		&__item{float: left;
+			.btn{
+				$list: week weekmap home back;
+				@each $author in $list {
+					.icon-#{$author}{display: block;width: 86px;height: 86px;background: url("/assets/images/common/header/hl_group/btn_#{$author}01.png") no-repeat 0 0;transition: background 0.3s;
+						&.active,
+						//&:hover{background-image: url("/assets/images/common/header/hl_group/btn_#{$author}01_active.png")}
+						.btn-link{display: block;width: 100%;height: 100%;}
+					}
+				}
+			}
+		}
+	}
+	.hr-group{
+		&__area{}
+		&__box{position: relative;overflow: hidden;min-width: 86px;min-height:86px;}
+		&__items{}
+		.btn-menu{position: absolute;top: 0;right: 0;width: 86px;height: 86px;background: url("/assets/images/common/header/hr_group/btn_gnb_menu01.png") no-repeat 0 0;transition: background 0.3s;
+			&.active,
+			//&:hover{background-image: url("/assets/images/common/header/hr_group/btn_gnb_menu01_active.png")}
+			& + .hr-group__items{display: none;}
+		}
+		&__item{float: left;
+			.btn{
+				$list: profile bgm bgm_mute help logout parent;
+				@each $author in $list {
+					.icon-#{$author}{display: block;width: 86px;height: 86px;background: url("/assets/images/common/header/hr_group/btn_#{$author}01.png") no-repeat 0 0;transition: background 0.3s;
+						&.active,
+						//&:hover{background-image: url("/assets/images/common/header/hr_group/btn_#{$author}01_active.png")}
+						.btn-link{display: block;width: 100%;height: 100%;}
+					}
+				}
+				$list: kor eng;
+				@each $author in $list {
+					.icon-#{$author}{display: block;width: 109px;height: 86px;background: url("/assets/images/common/header/hr_group/btn_#{$author}01.png") no-repeat 0 0;transition: background 0.3s;
+						&.active,
+						//&:hover{background-image: url("/assets/images/common/header/hr_group/btn_#{$author}01_active.png")}
+						.btn-link{display: block;width: 100%;height: 100%;}
+					}
+				}
+			}
+		}
+	}
+}

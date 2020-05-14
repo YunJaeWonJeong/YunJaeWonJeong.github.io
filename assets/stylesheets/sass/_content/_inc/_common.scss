@@ -1,0 +1,68 @@
+@import "../../mixin/baseImport";
+@media screen and (min-width: 1920px) {
+	.wrap{background-size:cover !important;}
+	#wrapDim{margin-left: 0 !important;left: 0 !important;width: 100% !important;
+
+	}
+}
+@media screen and (min-height: 1080px) {
+	.wrap{background-size:cover !important;}
+}
+
+@page {size: A4 landscape;margin: 0;}
+body{-webkit-print-color-adjust: exact !important;}
+html,body{width: 100%;height: 100%;}
+.wrap{width: 100%;height: 100%;min-height: 768px;min-width:1024px;background: url("/assets/images/common/content_bg01.jpg") no-repeat 50% 50%;
+	&.season1{background-image: url("/assets/images/common/content_bg01.jpg");}
+	&.season2{background-image: url('/assets/images/common/content_bg01.jpg');}
+	&.season3{background-image: url('/assets/images/common/content_bg02.jpg');}
+	&.season4{background-image: url('/assets/images/common/content_bg02.jpg');}
+	&-outer{position: relative;min-width:1024px;min-height: 768px;width: 100%;height: 100%;text-align: center;z-index: $z-content;background: url("/assets/images/common/content_bg_inner01.png") no-repeat 50% -20px;}
+	&-inner{position: relative;width: 1024px;height: 768px;margin: 0 auto;}
+}
+
+#wrapDim{position: fixed;top: 0;left: 50%;width: 100%;height: 100%;min-width:1920px;min-height: 1080px;margin-left: -960px; background-color: rgba(255,255,255,0.5);
+	.cloud-left{position: absolute;top: 0;left: 0;width: 536px;height: 100%;transform: translate(0, 0);
+		&:before{content:"";position: absolute;top: 0;left: 0;width: 536px;height: 300px;background: url("/assets/images/common/cloud_left_top01.png") no-repeat 0 0;}
+		&:after{content:"";position: absolute;bottom: 0;left: 0;width: 536px;height: 300px;background: url("/assets/images/common/cloud_left_btm01.png") no-repeat 0 100%;}
+	}
+	.cloud-right{position: absolute;top: 0;right: 0;width: 536px;height: 100%;transform: translate(0, 0);
+		&:before{content:"";position: absolute;top: 0;left: 0;width: 536px;height: 300px;background: url("/assets/images/common/cloud_right_top01.png") no-repeat 0 0;}
+		&:after{content:"";position: absolute;bottom: 0;left: 0;width: 536px;height: 300px;background: url("/assets/images/common/cloud_right_btm01.png") no-repeat 0 100%;}
+	}
+}
+
+#wrap{
+	//퍼블리싱용
+	//매안운 .container 에서 적용
+	//&.main{background: url('/assets/images/common/content_bg01.jpg') no-repeat 50% 50%;.wrap-inner{background: url('/assets/images/main/bg01.jpg') no-repeat 0 0;}}
+	//&.club-color-magic{.wrap-inner{background: url("/assets/images/club_color_magic/bg_club_color_magic01.jpg") no-repeat 0 0;}}
+	//&.club-house{.wrap-inner{background: url("/assets/images/club_house/bg_clubhouse01.jpg") no-repeat 0 0;}}
+	//&.club-house-fun-factory{.wrap-inner{background: url("/assets/images/club_house_fun_factory/bg_with_parents_fun_factory01.jpg") no-repeat 0 0;}}
+	//&.club-house-reader{.wrap-inner{background: url("/assets/images/club_house_reader/bg_club_house_reader01.jpg") no-repeat 0 0;}}
+	//&.club-house-sing-along{.wrap-inner{background: url("/assets/images/club_house_sing_along/bg_club_house_sing_along01.jpg") no-repeat 0 0;}}
+	//&.club-photo-shoot{.wrap-inner{background: url("/assets/images/club_photo_shoot/bg_club_photo_shoot01.jpg") no-repeat 0 0;}}
+	//&.week-tree{.wrap-inner{background:#895349;}}
+	//&.with-parents{.wrap-inner{background: url("/assets/images/with_parents/bg_with_parents01.jpg") no-repeat 0 0;}}
+	//&.with-parents-meet-greet{.wrap-inner{background-color: #fffff7;}}
+	//&.with-parents-progress{.wrap-inner{background-color: #fffff7;}}
+	//&.with-parents-reports{.wrap-inner{background-color: #fffff7;}}
+	//&.with-parents-sticker-charts{.wrap-inner{background: url("/assets/images/with_parents_sticker_charts/bg_with_parents_sc01.gif") repeat-x 0 0;}}
+	//&.with-parents-time-spent{.wrap-inner{background: url("/assets/images/with_parents_time_spent/bg_with_parents_ts01.gif") repeat-x 0 0;}}
+	//&.with-parents-vocabulary-lists{.wrap-inner{background: url(/assets/images/with_parents_vocabulary_lists/bg_with_parents_vl01.gif) repeat-x 0 0;}}
+	//개발용
+	&.club-color-magic{.wrap-inner{background: url("/assets/images/club_color_magic/bg_club_color_magic01.jpg") no-repeat 0 0;}}
+	&.clubhouse{.wrap-inner{background: url("/assets/images/club_house/bg_clubhouse01.jpg") no-repeat 0 0;}}
+	&.club-fun-factory{.wrap-inner{background: url("/assets/images/club_house_fun_factory/bg_with_parents_fun_factory01.jpg") no-repeat 0 0;}}
+	&.club-reader{.wrap-inner{background: url("/assets/images/club_house_reader/bg_club_house_reader01.jpg") no-repeat 0 0;}}
+	&.club-sing-along{.wrap-inner{background: url("/assets/images/club_house_sing_along/bg_club_house_sing_along01.jpg") no-repeat 0 0;}}
+	&.club-photo-shoot{.wrap-inner{background: url("/assets/images/club_photo_shoot/bg_club_photo_shoot01.jpg") no-repeat 0 0;}}
+	&.week-tree{.wrap-inner{background:#895349;}}
+	&.with-parents{.wrap-inner{background: url("/assets/images/with_parents/bg_with_parents01.jpg") no-repeat 0 0;}}
+	&.with-parents-meet-greet{.wrap-inner{background-color: #fffff7;}}
+	&.with-parents-progress{.wrap-inner{background-color: #fffff7;}}
+	&.with-parents-reports{.wrap-inner{background-color: #fffff7;}}
+	&.with-parents-sticker-charts{.wrap-inner{background: url("/assets/images/with_parents_sticker_charts/bg_with_parents_sc01.gif") repeat-x 0 0;}}
+	&.with-parents-time-spent{.wrap-inner{background: url("/assets/images/with_parents_time_spent/bg_with_parents_ts01.gif") repeat-x 0 0;}}
+	&.with-parents-vocabulary-lists{.wrap-inner{background: url(/assets/images/with_parents_vocabulary_lists/bg_with_parents_vl01.gif) repeat-x 0 0;}}
+}

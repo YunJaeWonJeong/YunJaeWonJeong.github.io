@@ -1,0 +1,21 @@
+
+@mixin swiper($src, $color : #66634d, $color-active : #fff) {
+	.swiper{padding: 160px 0 0;height: 768px;position: relative;box-sizing:border-box;
+		&-container{width: 100%;}
+		&-wrapper{}
+		&-controller{
+			.btn-swiper-prev{position: absolute;top: 325px;left: 10px;width: 44px;height: 72px;background: url("/assets/images/#{$src}/btn_prev01.png") no-repeat 0 0;opacity: 1;transition: opacity 0.3s;z-index: 2;
+				&.swiper-button-disabled{opacity: 0;}
+			}
+			.btn-swiper-next{position: absolute;top: 325px;right: 10px;width: 44px;height: 72px;background: url("/assets/images/#{$src}/btn_next01.png") no-repeat 0 0;opacity: 1;transition: opacity 0.3s;z-index: 2;
+				&.swiper-button-disabled{opacity: 0;}
+			}
+		}
+		&-pagination {bottom: 48px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{width: 39px;height: 45px;opacity: 1;transition: all 0.3s;margin: 0 6px;border-radius: unset;@include font($notoecp, $font-b, 24px, 43px, #{$color});background: url("/assets/images/#{$src}/icon_paging_num.png") no-repeat 0 0;
+				&-active{color: #{$color-active};background-image: url("/assets/images/#{$src}/icon_paging_num_active.png");}
+			}
+		}
+		&-slide{padding: 22px 0 14px;z-index: 1;}
+	}
+}

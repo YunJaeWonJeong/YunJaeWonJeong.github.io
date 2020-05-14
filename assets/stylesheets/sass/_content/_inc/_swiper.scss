@@ -1,0 +1,197 @@
+%week-tree-swiper{
+	#container{
+		&.season1,
+		&.season2{
+			.swiper{
+				&-slide{background-image: url("/assets/images/week_tree/bg_week_tree01.jpg");
+					&:nth-of-type(1) {
+						&:before {background-image: url("/assets/images/week_tree/bg_week_tree01.jpg");}
+					}
+					.month__item{
+						&.month1{
+							&.type1{
+								&:before{background-image: url("/assets/images/week_tree/bg_road01.png");}
+							}
+							&.type2{
+								&:before{background-image: url("/assets/images/week_tree/bg_road02.png");}
+							}
+						}
+						&.month4{
+							&:before{background-image: url("/assets/images/week_tree/bg_road01.png")}
+						}
+					}
+				}
+				&-controller{
+					.btn-swiper-prev{background-image: url("/assets/images/week_tree/btn_prev01.png");}
+					.btn-swiper-next{background-image: url("/assets/images/week_tree/btn_next01.png");}
+				}
+			}
+		}
+		&.season3,
+		&.season4{
+			.swiper{
+				&-slide{background-image: url("/assets/images/week_tree/bg_week_tree02_50.jpg");
+					&:nth-of-type(1) {
+						&:before {background-image: url("/assets/images/week_tree/bg_week_tree02_50.jpg");}
+					}
+					.month__item{
+						&.month1{
+							&.type1{
+								&:before{background-image: url("/assets/images/week_tree/bg_road03.png");}
+							}
+							&.type2{
+								&:before{background-image: url("/assets/images/week_tree/bg_road04.png");}
+							}
+						}
+						&.month4{
+							&:before{background-image: url("/assets/images/week_tree/bg_road04.png");}
+						}
+					}
+				}
+				&-controller{
+					.btn-swiper-prev{background-image: url("/assets/images/week_tree/btn_prev02.png");}
+					.btn-swiper-next{background-image: url("/assets/images/week_tree/btn_next02.png");}
+				}
+			}
+		}
+	}
+	.week-tree{
+		.swiper{
+			&-container{}
+			&-wrapper{
+			}
+			&-slide{height: 768px;overflow: visible;
+				&:nth-of-type(1){background: no-repeat 0 0;
+					&:before{content: "";position: absolute;top: 0;right: -196px;width: 196px;height: 768px;background: no-repeat -1024px 0;}
+					.month__item{
+						&.month1{
+							&.type1{
+								&:before{content:"";position: absolute;top: 0;left: 0;width: 1220px;height: 768px;background: no-repeat 56px 146px;}
+							}
+							&.type2{
+								&:before{content:"";position: absolute;top: 0;left: 0;width: 1220px;height: 768px;background: no-repeat 56px 146px;}
+							}
+						}
+					}
+					//&:before{content:"";position: absolute;top: 0;left: 0;width: 1220px;height: 768px;background: url("/assets/images/week_tree/bg_road01.png") no-repeat 50px 110px;}
+				}
+				&:nth-of-type(2){background: no-repeat -1220px 0;
+					.month__item{
+						&.month4{
+							&:before{content:"";position: absolute;top: 0;left: 0;width: 1024px;height: 768px;background: no-repeat -1170px 145px;}
+						}
+					}
+					//
+				}
+			}
+			&-controller{
+				.btn-swiper-prev{display: block;position: absolute;bottom: 14px;left: 15px;width: 114px;height: 100px;background: no-repeat 0 0;z-index: 1;
+					&.swiper-button-disabled{display: none;}
+				}
+				.btn-swiper-next{display: block;position: absolute;bottom: 19px;right: 17px;width: 114px;height: 100px;background: no-repeat 0 0;z-index: 1;
+					&.swiper-button-disabled{display: none;}
+				}
+			}
+		}
+	}
+}
+
+%club-color-magic-swiper-pagination{
+	.swiper{
+		&-pagination{bottom: 48px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{
+				width: 39px;height: 45px;opacity: 1;transition: all 0.3s;margin: 0 6px;border-radius: unset;
+				font-family: $nsroundecp;font-size: 24px;color: #a79cc0;line-height: 43px;background: url("/assets/images/club_color_magic/icon_paging_num.png") no-repeat 0 0;
+				&-active{
+					color: #fff;background: url("/assets/images/club_color_magic/icon_paging_num_active.png") no-repeat 0 0;
+				}
+			}
+		}
+	}
+}
+
+%club-fun-factory-swiper-pagination{
+	.swiper{
+		&-pagination {bottom: 48px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{width: 39px;height: 45px;opacity: 1;transition: all 0.3s;margin: 0 6px;border-radius: unset;@include font($nsroundecp, $font-b, 24px, 43px, #a79cc0);background: url("/assets/images/club_house_fun_factory/icon_paging_num.png") no-repeat 0 0;
+				&-active{color: #fff;background-image: url("/assets/images/club_house_fun_factory/icon_paging_num_active.png");}
+			}
+		}
+	}
+}
+
+%club-reader-swiper-pagination{
+	.swiper{
+		&-pagination {bottom: 48px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{width: 39px;height: 45px;opacity: 1;transition: all 0.3s;margin: 0 6px;border-radius: unset;@include font($nsroundecp, $font-b, 24px, 43px, #66634d);background: url("/assets/images/club_house_reader/icon_paging_num.png") no-repeat 0 0;
+				&-active{color: #fff;background-image: url("/assets/images/club_house_reader/icon_paging_num_active.png");}
+			}
+		}
+	}
+}
+
+%club-sing-along-swiper-pagination{
+	.swiper{
+		&-pagination {bottom: 48px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{width: 39px;height: 45px;opacity: 1;transition: all 0.3s;margin: 0 6px;border-radius: unset;@include font($nsroundecp, $font-b, 24px, 43px, #ba703c);background: url("/assets/images/club_house_sing_along/icon_paging_num.png") no-repeat 0 0;
+				&-active{color: #948ca9;background-image: url("/assets/images/club_house_sing_along/icon_paging_num_active.png");}
+			}
+		}
+	}
+}
+
+%club-photo-shoot-swiper-pagination{
+	.swiper{
+		&-pagination{bottom: 48px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{width: 39px;height: 45px;opacity: 1;transition: all 0.3s;margin: 0 6px;border-radius: unset;font-family: $nsroundecp;font-size: 24px;color: #8398aa;line-height: 43px;background: url("/assets/images/club_photo_shoot/icon_paging_num.png") no-repeat 0 0;
+				&-active{color: #fff;background: url("/assets/images/club_photo_shoot/icon_paging_num_active.png") no-repeat 0 0;}
+			}
+		}
+	}
+}
+
+%with-parents-meet-greet-swiper-pagination{
+	.swiper{
+		&-pagination {bottom: -41px;left: 0;width: 100%;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{flex:1; width: 32px;height: 32px;opacity: 1;transition: all 0.3s;margin: 0 15px;@include font($nsroundecp, $font-b, 19px, 36px, #fff);background: url("/assets/images/with_parents_meet_greet/icon_paging_num.png") no-repeat 0 0;
+				&-active{color: #fff;background-image: url("/assets/images/with_parents_meet_greet/icon_paging_num_active.png");}
+			}
+		}
+	}
+}
+
+%with-parents-reports-swiper-container{
+	.swiper{
+		&-container{width: 718px;margin: 0 34px;}
+	}
+}
+
+
+%common-help01-swiper{
+	.swiper{
+		&-pagination{bottom: 15px;left: 0;width: 100%;display: flex;align-content: center;justify-content: center;flex-wrap: wrap;
+			&-bullet{width: 29px;height: 29px;opacity: 1;transition: all 0.3s;margin: 0 10px;@include font($nsroundecp, $font-b, 21px, 32px, #fff);background: url("/assets/images/common/help/icon_paging_num.png") no-repeat 0 0;
+				&-active{background-image: url("/assets/images/common/help/icon_paging_num_active.png");}
+			}
+		}
+	}
+}
+
+#wrap{
+	&.week-tree{@extend %week-tree-swiper}
+	&.clubhouse{}
+	&.club-color-magic{@extend %club-color-magic-swiper-pagination}
+	&.club-fun-factory{@extend %club-fun-factory-swiper-pagination}
+	&.club-reader{@extend %club-reader-swiper-pagination}
+	&.club-sing-along{@extend %club-sing-along-swiper-pagination}
+	&.club-photo-shoot{@extend %club-photo-shoot-swiper-pagination}
+	&.with-parents{}
+	&.with-parents-meet-greet{@extend %with-parents-meet-greet-swiper-pagination}
+	&.with-parents-progress{}
+	&.with-parents-reports{@extend %with-parents-reports-swiper-container}
+	&.with-parents-sticker-charts{}
+	&.with-parents-time-spent{}
+	&.with-parents-vocabulary-lists{}
+}
+
+.common-help01{@extend %common-help01-swiper;}

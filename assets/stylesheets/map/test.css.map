@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.scss"],"names":[],"mappings":"AAIC;EAAS,iBAAgB;CAAG;;AAA5B;EAAS,iBAAgB;CAAG","file":"../sass/test.css","sourcesContent":["@import './sprite/week7_after_leg5-sprite';\n@import './sprite/week8_after_leg5-sprite';\n@for $i from 7 through 8 {\n\t$leg : length('$week#{$i}-after-leg5-sprites');\n\t.#{$leg}{margin-top: 10em;}\n}\n"]}
