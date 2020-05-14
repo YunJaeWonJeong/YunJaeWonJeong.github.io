@@ -122,21 +122,11 @@
                     <!-- Swiper -->
                     <div class="swiper">
                         <div class="swiper-container gallery-top">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
+                            <div class="swiper-wrapper"">
+                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg); height:auto;"></div>
+                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg); height:auto;"></div>
+                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_03.jpg); height:auto;"></div>
+                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_05.jpeg); height:auto;"></div>
                             </div>
                         </div>
                         <!--<div class="swiper-button-next swiper-button-white"></div>-->
@@ -145,18 +135,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
                                 <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg)"></div>
-                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_03.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_05.jpeg)"></div>
                             </div>
                         </div>
                     </div>
@@ -184,9 +164,9 @@
                         },
                       });
                       galleryTop.on('resize', () => {
-                        $(".gallery-top .swiper-wrapper").css('height', $(window).outerWidth(true) - 50);
+                        $(".gallery-top .swiper-wrapper").css('height', $(window).outerWidth(true) + 25);
                       });
-                      $(".gallery-top .swiper-wrapper").css('height', $(window).outerWidth(true) - 50);
+                      $(".gallery-top .swiper-wrapper").css('height', $(window).outerWidth(true) + 25);
                     </script>
                 </section>
             </article>
@@ -261,14 +241,20 @@
                                 <strong>주차</strong>
                                 <p>본관주차장 B1 ~ B4</p>
                             </li>
-
+                            <br/>
+                            <hr>
                             <li>
                                 <strong>신랑측</strong>
-                                <p>세종 조치원읍 도원1로 16 신흥푸르지오 정문 앞 <br/>08시 30분 출발 (코리아투어관광)</p>
+                                <p>세종 조치원읍 도원로 16 <br/>신흥푸르지오 정문 앞 <br/> 08시 30분 출발 <span>(코리아투어관광)</span></p>
                             </li>
                             <li>
                                 <strong></strong>
-                                <p>경기도 오산시 역광장로 59 오산역 09시 40분 출발</p>
+                                <p>경기도 오산시 역광장로 59 오산역 <br/>09시 40분 출발<span>(코리아투어관광)</span></p>
+                            </li>
+                            <br/>
+                            <li>
+                                <strong>신부측</strong>
+                                <p>강원도 춘천시 돌담길8번길 10-1 <br/>온의동 kbs 방송국 옆 만남의숲 <br/> 09시 30분 출발</p>
                             </li>
                         </ul>
                     </div>
