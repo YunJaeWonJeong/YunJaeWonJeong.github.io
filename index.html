@@ -122,7 +122,7 @@
                     <!-- Swiper -->
                     <div class="swiper">
                         <div class="swiper-container gallery-top">
-                            <div class="swiper-wrapper"">
+                            <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_01.jpg); height:auto;"></div>
                                 <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_02.jpg); height:auto;"></div>
                                 <div class="swiper-slide" style="background-image:url(./assets/images/img_swiper_03.jpg); height:auto;"></div>
@@ -207,7 +207,7 @@
             <article class="map stage">
                 <h1 class="title">map</h1>
 
-                <div id="daumRoughmapContainer1548602942125"></div>
+                <div id="map" style="width:500px;height:400px;"></div>
 
                 <div class="js-scroll-wrap">
                     <div class="info1">
@@ -293,53 +293,15 @@
     $("html, body").animate({scrollTop:0}, 500, 'swing');
   })
 </script>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=50987a0145d5458f547f7ab367ca27b2"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=621825037a17efac957f388450f47601"></script>
 <script charset="UTF-8">
-  var container = document.getElementById('daumRoughmapContainer1548602942125');
+  var container = document.getElementById('map');
   var options = {
-    center: new daum.maps.LatLng(37.52038005400312, 126.90377077293842),
+    center: new kakao.maps.LatLng(37.52038005400312, 126.90377077293842),
     level: 3
   };
 
-  var map = new daum.maps.Map(container, options);
-
-  var positions = [
-    {
-      title: '웨딩그룹위더스',
-      latlng: new daum.maps.LatLng(37.52135740425032, 126.90458851963542),
-      html: '<div id="address_03" style="padding:0 5px;background:#fff;border-radius: 20px;padding-left: 10px;padding-right: 10px;border: 1px solid #2c3a51;padding-top:2px;padding-bottom:2px;font-size:14px;"> 영등포 위더스 </div>',
-      xAnchor: 1.15,
-      yAnchor: 1.8
-    },
-    {
-      title: '부속주차장 - 영남P',
-      latlng: new daum.maps.LatLng(37.51947087239316, 126.90258645384074),
-      html: '<div id="address_04" style="padding:0 5px;background:#fff;border-radius: 20px;padding-left: 10px;padding-right: 10px;border: 1px solid #2c3a51;padding-top:2px;padding-bottom:2px;font-size:14px;"> 부속주차장 - 영남P </div>',
-      xAnchor: -0.15,
-      yAnchor: 1.8
-    }
-  ]
-
-  for (var i = 0; i < positions.length; i++ ){
-
-    var imageSize = new daum.maps.Size(24, 35);
-
-    var marker = new daum.maps.Marker({
-      map: map,
-      position: positions[i].latlng,
-      title : positions[i].title
-    });
-
-    var customOverlay = new daum.maps.CustomOverlay({
-      map: map,
-      clickable : true, // 커스텀 오버레이 클릭 시 지도에 이벤트를 전파하지 않도록 설정한다
-      content: positions[i].html,
-      position: positions[i].latlng,
-      xAnchor: positions[i].xAnchor,
-      yAnchor: positions[i].yAnchor,
-    });
-
-  }
+  var map = new kakao.maps.Map(container, options);
 
   function copyToClipboard(val) {
     var t = document.createElement("textarea");
