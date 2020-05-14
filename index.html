@@ -8,7 +8,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="[최윤재&박원정] 결혼합니다.">
     <meta property="og:description" content="Wedding">
-    <meta property="og:image" content="https://yunjaewonjeong.github.io/assets/images/main.jpg">
+    <meta property="og:image" content="https://yunjaewonjeong.github.io/assets/images/img_main.jpg">
     <meta property="og:url" content="https://yunjaewonjeong.github.io/">
     <meta property="og:site_name" content="초대합니다."/>
     <meta name="Keywords" content="최윤재,박원정,wedding" />
@@ -46,16 +46,16 @@
                     </div>
                 </div>
                 <div class="img-box js-event7 js-event">
-                    <img src="./assets/images/main.jpg" class="img" alt="">
+                    <img src="assets/images/img_main.jpg" class="img" alt="">
                 </div>
             </article>
             <!--wedding info-->
             <article class="wedding-info stage js-scroll-wrap">
                 <h2 class="title js-event1 js-event">wedding invitation</h2>
                 <p class="txt js-event2 js-event">
-                    저희 두 사람이 새로운 인생의 첫발을 내딛는<br>
-                    뜻깊은 서약의 자리를 갖고자 하오니<br>
-                    부디 오셔서 축하와 격려를 건네 주시면 대단히 감사하겠습니다.
+                    서로에 대해 감사함과 서로를 생각하면 고마움이 있기에 하루가 늘 행복했습니다.<br>
+                    이제 그 행복을 곁에서 평생 함께 하려고 합니다.<br>
+                    함께 자리를 하셔서 축복해주시면 더없는 기쁨이 되겠습니다.
                 </p>
                 <div class="info-box js-event3 js-event">
                     <strong class="place">웨딩그룹위더스 중랑</strong>
@@ -104,7 +104,7 @@
                         <li class="js-event4 js-event" style="background-image: url('./assets/images/img_wonjeong.jpg')"></li>
                         <li class="js-event5 js-event" style="background-image: url('./assets/images/img_photo0.jpg')"></li>
                         <li class="js-event6 js-event" style="background-image: url('./assets/images/img_photo1.jpg')"></li>
-                        <li class="js-event7 js-event" style="background-image: url('./assets/images/img_photo2.jpg')"></li>
+                        <li class="js-event7 js-event" style="background-image: url('assets/images/img_photo2.jpg')"></li>
                     </ul>
                 </section>
             </article>
@@ -205,9 +205,9 @@
                 </div>
             </article>
             <article class="map stage">
-                <h1 class="title">map</h1>
+                <h1 class="title" style="margin-bottom: 20px;">map</h1>
 
-                <div id="map" style="width:500px;height:400px;"></div>
+                <div id="map" style="width:100%;height:400px;"></div>
 
                 <div class="js-scroll-wrap">
                     <div class="info1">
@@ -297,7 +297,7 @@
 <script charset="UTF-8">
   var container = document.getElementById('map');
   var options = {
-    center: new kakao.maps.LatLng(37.52038005400312, 126.90377077293842),
+    center: new kakao.maps.LatLng(14146216.87357286, 4524896.1859286595),
     level: 3
   };
 
@@ -313,15 +313,12 @@
   }
 
   $('#address_01,#address_02,#address_03').click(function() {
-    copyToClipboard('영등포구 영등포동6가 7번지 웨딩그룹 위더스 영등포');
+    copyToClipboard('서울특별시 중랑구 묵1동 175-1 웨딩그룹 위더스 중랑');
     alert('위더스 주소가 복사 되였습니다.');
   });
 
-  $('#address_04').click(function() {
-    copyToClipboard('서울특별시 영등포구 영등포동4가 영남공영 주차장');
-    alert('영남P 주소가 복사 되였습니다.');
-  });
 
 </script>
 </body>
 </html>
+
