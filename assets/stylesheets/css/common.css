@@ -1153,12 +1153,13 @@ body {
 }
 
 .stage.couple .section1 ul {
-  display: flex;
+  display: grid;
   margin-top: 18px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .stage.couple .section1 li {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .stage.couple .section1 li:first-child {
@@ -1501,6 +1502,12 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+}
+
+.stage.map .info3 span {
+  position: relative;
+  width: 60px;
+  padding-left: 8px;
 }
 
 .stage.map .info3 strong {
