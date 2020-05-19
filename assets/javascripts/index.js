@@ -1,14 +1,19 @@
 const callList = document.querySelectorAll(".wedding-tel");
 const smsList = document.querySelectorAll(".wedding-sms");
 callList.forEach(element => {
-  const {tel} = element.data;
-    const decodeTel = atob(tel);
-
-    location.href = `tel:${decodeTel}`
+    element.addEventListener('click' , () => {
+        const {tel} = element.dataset;
+        const decodeTel = atob(tel);
+        console.log(decodeTel)
+        location.href = `tel:${decodeTel}`
+    })
 });
 
 smsList.forEach(element => {
-    const {sms} = element.data;
-    const decodeSMS = atob(sms);
-    location.href = `sms:${decodeSMS}`
+    element.addEventListener('click' , () => {
+        const {sms} = element.dataset;
+        const decodeSMS = atob(sms);
+        console.log(decodeSMS)
+        location.href = `sms:${decodeSMS}`
+    })
 });
